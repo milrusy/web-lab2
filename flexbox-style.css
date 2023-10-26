@@ -1,9 +1,6 @@
 html {
     background-color: seagreen;
-    font-size: 20px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
-    /* font-family: 'Didact Gothic', sans-serif;
-    font-family: 'Questrial', sans-serif;
-    font-family: 'Roboto', sans-serif; */
+    font-size: 20px;
     font-family: 'Roboto Slab', serif;
     height: 100%;
 }
@@ -22,12 +19,12 @@ a{
 
 
 #logo{
-  display: flexbox;
-  flex: 1;
+  display: block;
   
-  margin-left: auto;
-  margin-right: auto;
-
+  margin-left: 9.8%;
+  margin-right: 10.5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 150px;
   height: auto;
 
@@ -49,13 +46,11 @@ a{
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    min-height: 56.4%;
 }
 
 .flexcolumn{
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
 }
 
 #middle{
@@ -72,6 +67,8 @@ a{
     flex-grow: 1;
     justify-content: space-between;
   background-color: #A01D26;
+  padding:0;
+  margin:0;
 }
 
 #block2{
@@ -112,7 +109,6 @@ a{
 
 #block6{
     display: flex;
-    flex: 1;
   background-color: #acbebe;
   text-align: center;
   justify-content: center;
@@ -125,7 +121,8 @@ a{
   background-color: #A01D26;
   text-align: start;
   justify-content: space-between;
-  padding-right: 5%;
+  padding-right: 4.2%;
+  min-height: 72px;
 }
 
 .blocks{
@@ -142,13 +139,18 @@ a{
   justify-content: end;
   text-align: end;
   word-break: break-word;
-
-  padding: 5px;
+  max-width: 29%;
+  padding-right: 5px;
   flex-shrink: 0;
 }
 
 #forbox{
+  display: flexbox;
     flex: 5;
+    max-width: 30%;
+    padding-right: 0;
+    padding-left: 0;
+    margin:0;
 }
 
 #box1{
@@ -157,21 +159,22 @@ a{
   align-items: center;
   background-color: #f4f4ef;
   height: max-content;
-  width: fit-content;
-  max-width: 60%;
+  width: 83%;
   word-break: break-word;
+  padding-right: 0;
   
-  margin-left: 10%;
   flex-shrink: 0;
   margin-top: 4.17%;
   margin-bottom: 4.17%;
+  margin-left: 14%;
+  margin-right: 0;
 }
 
 #text2{
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 5px;
+  padding-right: 0px;
   max-width: 40%;
 }
 
@@ -185,9 +188,9 @@ a{
   word-break: break-word;
   flex-wrap: wrap;
   height: min-content;
-  width: fit-content;
-  max-width: 25%;
+  width: 40%;
+  max-width: 25.5%;
   flex-shrink: 0;
-  margin-top: 4.17%;
-  margin-bottom: 4.17%;
+  margin-top: auto;
+  margin-bottom: auto;
 }

@@ -1,9 +1,6 @@
 html {
     background-color: seagreen;
-    font-size: 20px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
-    /* font-family: 'Didact Gothic', sans-serif;
-    font-family: 'Questrial', sans-serif;
-    font-family: 'Roboto', sans-serif; */
+    font-size: 20px;
     font-family: 'Roboto Slab', serif;
 }
 body{
@@ -22,7 +19,7 @@ a{
   display: grid;
   height: 100%;
   grid-template-rows: repeat(4, auto);
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
   margin: 0px;
   padding: 0px;
 }
@@ -55,7 +52,6 @@ a{
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #A01D26;
-  padding: 1%;
   grid-row: 1;
   grid-column: 1/-1;
 }
@@ -68,15 +64,25 @@ a{
   justify-content: center;
   grid-row:2/4;
   grid-column: 1;
-  padding: 1%;
+  padding-left: 1%;
 }
 
 #block3{
+  display: grid;
   background-color: #acbebe;
   grid-row: 1;
   grid-column: 1;
   width:100%;
-  height: 100%;
+  min-height: 98px;
+  align-items: center;
+  text-align: center;
+  padding-top: 0;
+  margin: 0;
+}
+
+h2{
+  margin:0;
+  font-size: 30px;
 }
 
 #block4{
@@ -87,7 +93,7 @@ a{
   background-color: #20232a;
   color:#f4f4ef;
   text-align: center;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   grid-row: 2/4;
   grid-column: -2;
@@ -108,6 +114,7 @@ a{
   grid-row: 2/4;
   grid-column: 2/4;
   height: 100%;
+  align-items: start;
 }
 
 #block6{
@@ -118,7 +125,8 @@ a{
   justify-content: center;
   grid-row: -1;
   grid-column: 1;
-  height: 100%;
+  height: fit-content;
+  min-height: 34px;
 }
 
 #block7{
@@ -130,7 +138,6 @@ a{
   justify-content: start;
   grid-row: -2;
   grid-column: 1/-1;
-  padding: 1%;
 }
 
 .blocks{
@@ -145,6 +152,8 @@ a{
   text-align: right;
   word-break: break-word;
   margin-left: auto;
+  margin-right: 1%;
+  max-width: 85%;
 }
 
 
@@ -154,18 +163,19 @@ a{
   background-color: #f4f4ef;
   height: max-content;
   word-break: break-word;
-  
+  max-width: 75%;
   grid-row: 1;
   grid-column: 1;
   margin-top: 4.17%;
   margin-bottom: 4.17%;
+  margin-left: 12%;
 }
 
 #text2{
   text-align: left;
-  padding: 5px;
   grid-row: 1;
   grid-column: 1;
+  margin-left: 1%;
 }
 
 #box2{
@@ -175,9 +185,17 @@ a{
   padding: 5px;
   background-color: #f4f4ef;
   grid-row: 1;
-  grid-column: 5;
+  grid-column: 4;
   word-break: break-word;
   height: min-content;
   margin-top: 4.17%;
   margin-bottom: 4.17%;
+  margin-right: 20%;
+  margin-left: 55%;
+  width: 120%;
+}
+
+#textin4{
+  align-self: center;
+  grid-row: 1/5;
 }

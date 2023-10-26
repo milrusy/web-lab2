@@ -11,6 +11,11 @@ body {
     border: 0;
     height: 100%;
 }
+td, tr, tbody{
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
 
 p {
     line-height: 2;
@@ -20,14 +25,15 @@ p {
 a {
     color: #f4f4ef;
 }
-
+h2{
+    font-size: 30px;
+}
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
 td {
-    padding: 10px;
     vertical-align: middle;
     height: fit-content;
 }
@@ -48,12 +54,13 @@ td {
 
 .blocks {
     text-align: center;
-    padding: 5px;
     word-break: break-word;
 }
 
 #block1 {
     background-color: #A01D26;
+    padding: 5px;
+
 }
 
 #block2 {
@@ -67,14 +74,16 @@ td {
     box-sizing: border-box;
     margin: 0;
     border: 0px solid black;
-    padding-bottom: 50%;
     background-color: #acbebe;
-    height:100%;
+    min-height: 83px;
+    height: 100%;
     padding: 0;
 }
 
 #textin3 {
     margin: 0;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 #block4 {
@@ -90,30 +99,55 @@ td {
     padding: 0px;
     background-color: #f4f4ef;
     font-size: large;
+    margin: 0;
+    border: 0px solid black;
+}
+
+#textin5{
+    margin: 2px;
 }
 
 #block6 {
     color: black;
     background-color: #acbebe;
+    padding: 5px;
 }
+
 
 #block7 {
     background-color: #A01D26;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
-#tb{
-    height: 100%;
+#fortext1{
+    margin-left: 12%;
 }
 #text1{
     display: block;
     text-align: right;
+    padding: 0px;
+    
+}
+#forbox1{
+    padding-left: 11%;
 }
 #box1{
     background-color: #f4f4ef;
     text-align: left;
+    width: 85%;
+    
 }
 #text2{
     display: block;
     text-align: start;
+}
+#forbox2{
+    margin-right: 11%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 #box2{
     
@@ -122,6 +156,10 @@ td {
     margin-left: auto;
     word-break: normal;
     min-width: fit-content;
+    min-height: 26px;
+    width: 85%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 #tablein5{
     height: 100%;
@@ -133,8 +171,5 @@ table{
 #td4, #td3{
     margin: 0;
     padding: 0;
-    height: fit-content;
-}
-td, tr, tbody{
     height: fit-content;
 }
