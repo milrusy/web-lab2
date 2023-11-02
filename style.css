@@ -136,6 +136,7 @@ a{
   display: flex;
   text-align: start;
   align-items: center;
+  align-self: center;
   background-color: #f4f4ef;
   height: max-content;
   word-break: break-word;
