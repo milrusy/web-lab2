@@ -51,8 +51,7 @@ a{
 #block1 {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgb(74, 45, 48);
+  background-color: #A01D26;;
   padding-left: 4.17%;
   padding-right: 4.17%;
   grid-row: 1/7;
@@ -103,6 +102,8 @@ a{
 }
 
 #block7{
+  display: flex;
+  align-items: center;
   background-color: #A01D26;
   text-align: start;
   justify-content: start;
@@ -160,6 +161,7 @@ a{
 #box2{
   display: flex;
   align-items: center;
+  align-self: center;
   text-align: center;
   justify-content: center;
   padding: 5px;
