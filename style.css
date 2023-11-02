@@ -49,6 +49,8 @@ a{
 }
 
 #block1 {
+  display: flex;
+  align-items: center;
   background-color: #A01D26;
   padding-left: 4.17%;
   padding-right: 4.17%;
